@@ -7,7 +7,7 @@
 body {
     font-size: 1.2rem;
     font-family: "Atkinson Hyperlegible Next", serif;    
-    min-height: 3000px;
+    min-height: 4000px;
 }
 
 .hero {
@@ -55,7 +55,28 @@ body {
     color: aliceblue;
 }
 
+.mynavbar {
+    
+}
 
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: Sacramento, cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: var(--shadow);
+}
+
+.mynavbar .offcanvas-body {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.mynavbar .nav-link {
+    color: white;
+    text-shadow: var(--shadow);
+}
 @media (max-width: 992px) {
     html {
         font-size: 95%;
