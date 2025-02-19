@@ -56,15 +56,22 @@ body {
 }
 
 .mynavbar {
-    
+    background-color: rgba(255, 255, 255, 0.553) !important;
+    backdrop-filter: blur(3px);
 }
 
 .mynavbar .navbar-brand, .mynavbar .offcanvas-title {
     font-family: Sacramento, cursive;
     font-size: 3rem;
     font-weight: bold;
-    color: white;
-    text-shadow: var(--shadow);
+    color: var(--pink);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.553) !important;
+    backdrop-filter: blur(3px);
 }
 
 .mynavbar .offcanvas-body {
@@ -74,12 +81,135 @@ body {
 }
 
 .mynavbar .nav-link {
-    color: white;
-    text-shadow: var(--shadow);
+    color: var(--pink);
 }
+
+.home {
+    background-image: url("./img/pattern.png");
+    padding: 2rem;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    min-height: 100vh;
+}
+
+.home h2 {
+    font-size: 5rem;
+    font-family: Sacramento, cursive;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.home h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4d4a4a;
+}
+
+.home p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #3a3838;
+}
+
+.home .couple {
+    margin-top: 5rem;
+
+}
+
+.home .couple h3 {
+    font-family: Sacramento, cursive;
+    font-size: 2.3rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.553) !important;
+    backdrop-filter: blur(3px) !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(4.6875rem);
+}
+
+.home .heart i {
+    margin: auto;
+    color: var(--pink);
+}
+
+.info {
+    background-color: var(--bg);
+    color: aliceblue;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info h2 {
+    font-size: 3rem;
+    font-family: Sacramento, cursive;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.info .alamat {
+    font-size: 1.2rem;
+}
+
+.info .description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: aliceblue !important;
+    backdrop-filter: blur(3px) !important;
+    border: 2px solid #999;
+    box-shadow: var(--shadow);
+    margin: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.info .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.7rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.info .card-header {
+    border-bottom: 2px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 2px solid #999;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(2.8125rem);
+    }
+}
+
+
 @media (max-width: 992px) {
     html {
-        font-size: 95%;
+        .home .heart {
+            transform: translateX(-50%) translateY(2.8125rem);
+        }
     }
 }
 
