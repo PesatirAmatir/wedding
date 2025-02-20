@@ -69,9 +69,7 @@ body {
 
 .mynavbar .offcanvas {
     height: 100vh;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.553) !important;
-    backdrop-filter: blur(3px);
+    width: 45%; 
 }
 
 .mynavbar .offcanvas-body {
@@ -207,15 +205,21 @@ body {
 
 @media (max-width: 992px) {
     html {
-        .home .heart {
-            transform: translateX(-50%) translateY(2.8125rem);
-        }
+        font-size: 95%;
+    }
+
+    .home .heart {
+        display: none;
     }
 }
 
 @media (max-width: 768px) {
     html {
         font-size: 85%;
+    }
+
+    .sticky-top {
+        overflow: hidden; 
     }
 }
 
