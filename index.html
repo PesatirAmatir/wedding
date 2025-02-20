@@ -279,10 +279,11 @@
     <script>
       const stickyTop = document.querySelector(".sticky-top");
       const offCanvas = document.querySelector(".offcanvas");
+      const offCanvasBody = document.querySelector(".offcanvas-body");
 
       offCanvas.addEventListener("show.bs.offcanvas", function () {
         stickyTop.style.overflow = "visible";
-        offCanvas.style.width = "45%";
+        offCanvasBody.style.width = "50%";
       });
 
       offCanvas.addEventListener("hidden.bs.offcanvas", function () {
