@@ -150,7 +150,8 @@ body {
     padding-bottom: 8rem;
 }
 
-.info h2 {
+.info h2,
+.story h2 {
     font-size: 3rem;
     font-family: Sacramento, cursive;
     color: var(--pink);
@@ -194,6 +195,25 @@ body {
 .info .card-footer {
     border-top: 2px solid #999;
     font-size: 0.7rem;
+}
+
+.story {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.story span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--bg);
+    letter-spacing: 0.065rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.story p {
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 @media (max-width: 1200px) {
